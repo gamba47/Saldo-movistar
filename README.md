@@ -15,5 +15,5 @@ Es simple, solo hay que ejecutar:
 
 y nos va imprimir en pantalla el saldo.
 
-Es simple, tonto y debe tener errores, pero me funcionó.
+Es tonto y debe tener errores, pero me funcionó.
 

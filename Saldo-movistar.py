@@ -4,8 +4,8 @@
 ################
 # Dependencias #
 ################
-# Fades - Se instala con pip install fades
-# PhantomJS  - apt-get install phanthomjs
+# Fades - Se instala con "pip3 install fades"
+# PhantomJS  - "apt-get install phanthomjs -y"
 
 from selenium import webdriver # fades.pypi
 import sys
@@ -17,16 +17,15 @@ except IndexError:
     print ("Imposible continuar, debe ingresar usuario y contraseña")
     sys.exit()
 
-driver= webdriver.PhantomJS()
-driver.get('https://www.movistar.com.ar/micuenta')
-usuario= driver.find_element_by_id('userNamesmall')
-usuario.send_keys(username)
-contraseña= driver.find_element_by_id('password-clear')
-contraseña.send_keys(password)
-submit=driver.find_element_by_css_selector('.btn-violeta')
-
-#Envio click para avanzar (algunas veces falló por eso esta este try)
 try:
+    driver= webdriver.PhantomJS()
+    driver.get('https://www.movistar.com.ar/micuenta')
+    usuario= driver.find_element_by_id('userNamesmall')
+    usuario.send_keys(username)
+    contraseña= driver.find_element_by_id('password-clear')
+    contraseña.send_keys(password)
+    submit=driver.find_element_by_css_selector('.btn-violeta')
+    #Envio click para avanzar (algunas veces falló por eso esta este try)
     submit.click()
 except:
     print ("Falla al querer ingresar a la web, por favor, intente nuevamente en unos minutos")

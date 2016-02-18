@@ -3,7 +3,7 @@ Script para consulta de Saldo en la Web de Movistar.com.ar
 
 # Dependencias
 
-* Instalar fades https://github.com/PyAr/fades
+* Instalar fades3 https://github.com/PyAr/fades =====>  pip3 install fades
 * Instalar PhantomJS http://phantomjs.org/
 *      La instalaciòn de PhantomJS en Ubuntu/Debian es "sudo apt-get install phantomjs -y" 
 

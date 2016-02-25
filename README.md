@@ -14,6 +14,3 @@ Es simple, solo hay que ejecutar:
 ./Saldo-movistar Usuario Contraseña
 
 y nos va imprimir en pantalla el saldo.
-
-Es tonto y debe tener errores, pero me funcionó.
-

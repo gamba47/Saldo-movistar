@@ -31,6 +31,17 @@ except:
     print ("Falla al querer ingresar a la web, por favor, intente nuevamente en unos minutos")
     sys.exit()
 
-saldo=driver.find_element_by_id('balance')
-print (saldo.text)
+try:
+    saldo=driver.find_element_by_id('balance')
+    print (saldo.text)
+except:
+    pass
+try:
+    saldo=driver.find_element_by_id('saldoActual')
+    todo=repr(saldo.text)
+    print(todo)
+    print (saldo.text[25:])
+except:
+    pass
+    
 driver.close()
